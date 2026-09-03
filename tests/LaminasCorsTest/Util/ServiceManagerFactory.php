@@ -59,7 +59,7 @@ abstract class ServiceManagerFactory
      * @param  array|null     $config
      * @return ServiceManager
      */
-    public static function getServiceManager(array $config = null)
+    public static function getServiceManager(?array $config = null)
     {
         $config = $config ?: static::getApplicationConfig();
         $serviceManager = new ServiceManager();
